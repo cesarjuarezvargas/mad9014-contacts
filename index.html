@@ -1,0 +1,74 @@
+<!--CALL FOR THE CSS SCRIPT FILE-->
+<link rel="stylesheet" href="CSS/main.css">
+
+<body>
+    <header>
+        <h1>Colleagues and Friends</h1>
+    </header>
+    <main>
+        <ul class="contacts">
+            <li class="contact">
+                <span class="delete"></span>
+                <h3>Jack Tripper</h3>
+                <p class="email">chef@threescompany.com</p>
+                <p class="phone">613-321-8765</p>
+                <p class="city">Los Angeles</p>
+            </li>
+            <li class="contact">
+                <span class="delete"></span>
+                <h3>Janet Wood</h3>
+                <p class="email">flowershopgirl@threescompany.com</p>
+                <p class="phone">613-727-4723</p>
+            </li>
+            <li class="contact">
+                <span class="delete"></span>
+                <h3>Terri Olson</h3>
+                <p class="email">prettynurse@thresscompany.org</p>
+                <p class="phone">613-876-0002</p>
+            </li>
+            <li class="contact">
+                <span class="delete"></span>
+                <h3>Larry Dallas</h3>
+                <p class="email">gigolo@threescompany.com</p>
+                <p class="phone">613-842-0101</p>
+            </li>
+            <li class="contact">
+                <span class="delete"></span>
+                <h3>Chrisie Snow</h3>
+                <p class="email">blonde@threescompany.com</p>
+                <p class="phone">613-876-2187</p>
+            </li>
+            <li class="contact">
+                <span class="delete"></span>
+                <h3>Ralph Furley</h3>
+                <p class="email">landlord@threescompany.com</p>
+                <p class="phone">613-842-6363</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div class="fab"></div>
+    </footer>
+
+    <!--  ADD A DARK OVERLAY AND THE FORM TO ADD A NEW CONTACT-->
+
+    <div class="overlay">&nbsp;</div>
+
+    <section class="contactform">
+        <form>
+            <input type="text" id="input-fullname" placeholder="What's the full name?" required/>
+            <input type="email" id="input-emailaddress" placeholder="Email address please" required/>
+            <input type="text" id="input-mobilenumber" placeholder="Mobile phone number available?" required/>
+            <input type="text" id="input-currentcity" placeholder="Where does (s)he live?" required/>
+            <button id="button-cancel">Cancel All!</button>
+            <button id="button-save">Save The New Contact!</button>
+
+        </form>
+
+    </section>
+
+    <!--CALLING THE JS SCRIPT FILE-->
+
+      <script src="JS/contact.js"></script>
+       <script src="JS/starter.js"></script>
+</body>

@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Roboto, sans-serif;
+    background-color: #757571;
+    background: linear-gradient(to right, rgba(117, 177, 117, 0), rgba(117, 117, 117, 1));
+}
+
+header {
+    background-color: #C2004A;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+    height: 5rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px hsl(0, 100%, 100%), -1px -1px 1px hsl(0, 0%, 0%);
+}
+
+.contacts {
+    width: 70%;
+    border: 1px solid #aaa;
+    box-shadow: 20px 20px 10px #42393D;
+    list-style: none;
+    margin: 3rem auto 3rem auto;
+    border-radius: 9px;
+  
+}
+
+.contact {
+    height: 8rem;
+    border-bottom: 3px solid white;
+}
+
+.contact:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.contact .delete {
+    float: right;
+    width: 10%;
+    height: 8rem;
+    background-color: #C2C2C2;
+    text-align: center;
+    line-height: 7rem;
+    font-size: 2rem;
+    display: block;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/179202/circle-x.svg);
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.contact .delete:hover {
+    background-color: #006A82;
+    border-radius: 9px;
+}
+
+.contact h3 {
+    color: #333;
+    padding-top: 1.0rem;
+    line-height: 3.0rem;
+    font-size: 2.0rem;
+    padding: 0 2rem;
+}
+
+.contact:hover h3 {
+    color: #C2004A;
+}
+
+.contact p {
+    color: #666;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0 3rem;
+    vertical-align: top;
+}
+
+.fab {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/179202/plus.svg);
+    background-repeat: no-repeat;
+    background-color: #C2004A;
+    background-position: center center;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    box-shadow: 2px 2px 8px hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+.fab:hover {
+    background-color: hsl(354, 50%, 60%);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    position: fixed;
+    /* new addition to this template, below: */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    /* end of new addition */
+    z-index: 100;
+}
+
+.contactform {
+    position: fixed;
+    /*  new additions to this template follows: */
+    display: none;
+    z-index: 200;
+    /*  end of new additions*/
+    width: 70vw;
+    height: 40vh;
+    top: 30vh;
+    left: 10vw;
+    align-content: center;
+    background-color: #C2C2C2;
+    box-shadow: 10px 10px 10px white;
+}
+
+
+/*STYLES FOR THE INPUT FIELDS AND CONTACT BUTTON FOLLOW:*/
+
+.contactform input {
+    width: 80%;
+    height: 12%;
+    font-size: 1.6rem;
+    padding: .25rem 2rem;
+    margin: 1rem;
+    
+}
+
+.contactform button {
+    border: none;
+    font-size: 1.5rem;
+    padding: .25rem 2rem;
+    margin: 1rem;
+    background-color: #006A82;
+    color: snow;
+    cursor: pointer;
+}
+
+
+/* END OF STYLES FOR THE INPUT FIELDS AND CONTACT BUTTON*/
